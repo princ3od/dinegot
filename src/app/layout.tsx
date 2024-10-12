@@ -6,6 +6,7 @@ import { Inter } from "next/font/google"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { ReactTooltipProvider } from "@/components/export/ReactTooltipProvider"
+import { LoadingProvider } from "@/components/loading-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -73,7 +74,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             defaultTheme="light"
             disableTransitionOnChange
           >
-            {children}
+            <LoadingProvider>{children}</LoadingProvider>
           </ThemeProvider>
         </ReactTooltipProvider>
       </body>

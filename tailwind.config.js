@@ -17,6 +17,17 @@ module.exports = {
       },
     },
     extend: {
+      backdropBlur: {
+        sm: '4px', // You can customize this value
+        md: '8px',
+        lg: '12px',
+        // Add more sizes as needed
+      },
+      variants: {
+        // Enable the backdrop-filter utilities
+        backdropFilter: ['responsive'],
+      },
+
       colors: {
         border: "var(--border)",
         input: "var(--input)",
@@ -74,5 +85,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('tailwindcss-filters'),],
 }
