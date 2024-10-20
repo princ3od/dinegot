@@ -4,7 +4,7 @@
 
 @layer base {
   .light {
-    --background: #f9f9ff;
+    --background: #ffffff;
     --foreground: #111111;
 
     --background-container: #ededf4;
@@ -35,7 +35,6 @@
     --ring: #c4c6d0;
 
     --radius: 0.5rem;
-
   }
 
   .dark {
