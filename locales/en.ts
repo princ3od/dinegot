@@ -7,4 +7,9 @@ export default {
       address: "Address",
     },
   },
+  search: {
+    restaurants: {
+      hint: "Find a restaurant, café, or dish",
+    },
+  },
 } as const

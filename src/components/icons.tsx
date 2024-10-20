@@ -1,4 +1,4 @@
-import { Command, MapPin, Moon, SunMedium } from "lucide-react"
+import { Command, MapPin, Moon, SunMedium, ListFilter  } from "lucide-react"
 
 export type IconKeys = keyof typeof icons
 
@@ -11,6 +11,7 @@ const icons = {
   sun: SunMedium,
   moon: Moon,
   mapPin: MapPin,
+  listFilter: ListFilter,
 }
 
 export const Icons: IconsType = icons

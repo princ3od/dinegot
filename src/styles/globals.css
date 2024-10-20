@@ -4,7 +4,7 @@
 
 @layer base {
   .light {
-    --background: #f9f9ff;
+    --background: #ffffff;
     --foreground: #111111;
 
     --background-container: #ededf4;

@@ -6,6 +6,13 @@ const nextConfig = {
     locales: ["en-US", "fr", "nl-NL"],
     defaultLocale: "en-US",
   },
+  images: {
+    domains: [
+      'scontent.fsgn5-6.fna.fbcdn.net', // Add your first image domain here
+      'scontent.fsgn5-13.fna.fbcdn.net', // Add the second image domain
+      // You can add more domains as needed
+    ],
+  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")

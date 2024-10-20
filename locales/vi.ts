@@ -7,4 +7,9 @@ export default {
       address: "Địa chỉ",
     },
   },
+  search: {
+    restaurants: {
+      hint: "Tìm nhà hàng, quán cà phê, hoặc món ăn",
+    },
+  },
 } as const
