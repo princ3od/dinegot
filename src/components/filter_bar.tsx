@@ -4,21 +4,21 @@ import { Button } from "./ui/button"
 
 const FilterBar = () => {
   return (
-    <div className="flex items-start  space-x-4 self-start border-gray-200 bg-transparent px-4">
+    <div className="mb-8 mt-3  flex items-start space-x-2 self-start border-gray-200 bg-transparent">
       <Button
         variant="ghost"
-        className="flex items-center justify-center space-x-2 bg-neutral-100"
+        className="flex items-center justify-center space-x-2 bg-neutral-100 px-2 py-[6px] "
       >
-        <Icons.listFilter className="h-4 w-4 bg-transparent" />
+        <Icons.listFilter className="size-4 bg-transparent" />
         <strong className="bg-transparent">Filter</strong>
       </Button>
 
-      <Button variant="ghost" className="bg-neutral-100">
-        <strong className="bg-transparent">Nearby</strong>
+      <Button variant="ghost" className="bg-neutral-100 px-2 py-[6px]">
+        <strong className=" bg-transparent">Nearby</strong>
       </Button>
 
-      <Button variant="ghost" className="bg-neutral-100">
-        <strong className="bg-transparent">High rating</strong>
+      <Button variant="ghost" className="bg-neutral-100 px-2 py-[6px] ">
+        <strong className=" bg-transparent">High rating</strong>
       </Button>
     </div>
   )
