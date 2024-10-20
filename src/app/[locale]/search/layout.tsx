@@ -1,7 +1,8 @@
 "use client"
 
 import { PropsWithChildren } from "react"
-import bg from "@assets/png/search_bg.jpg" 
+import { usePathname } from "next/navigation"
+import bg from "@assets/png/search_bg.jpg"
 
 import { Spinner } from "@/components/ui/spinner"
 import { useLoading } from "@/components/loading-provider"
@@ -9,12 +10,17 @@ import { useLoading } from "@/components/loading-provider"
 import SubLayout from "../client/layout"
 
 export default function Layout({ children }: PropsWithChildren) {
-  const { loading } = useLoading() 
+  const { loading } = useLoading()
+  const pathname = usePathname()
+  const validLocales = ["vi", "en"]
+  const locale = validLocales.includes(pathname.split("/")[1])
+    ? pathname.split("/")[1]
+    : "vi"
 
   return (
     <SubLayout
       params={{
-        locale: "vi",
+        locale: locale,
       }}
     >
       <div
